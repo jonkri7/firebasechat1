@@ -108,10 +108,31 @@
 </div>
 
 <!-- Import and configure the Firebase SDK -->
+
+
 <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
-<!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup 
 <script src="/__/firebase/4.1.3/firebase.js"></script>
-<script src="/__/firebase/init.js"></script>
+<script src="/__/firebase/init.js"></script>-->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-messaging.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCcLhd9tz_l6-hR_t1WdAxgb4NAoMbvME0",
+    authDomain: "friendlychat-21442.firebaseapp.com",
+    databaseURL: "https://friendlychat-21442.firebaseio.com",
+    projectId: "friendlychat-21442",
+    storageBucket: "friendlychat-21442.appspot.com",
+    messagingSenderId: "343469521635"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <script src="scripts/main.js"></script>
 </body>
